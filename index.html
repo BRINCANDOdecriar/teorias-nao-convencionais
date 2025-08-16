@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teorias Não Convencionais</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #0f0f23;
+            color: #e0e0e0;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: #3a0ca3;
+            padding: 1rem;
+            text-align: center;
+        }
+        h1 {
+            margin: 0;
+        }
+        .post {
+            background: #1a1a2e;
+            margin: 1rem auto;
+            padding: 1rem;
+            max-width: 800px;
+            border-radius: 8px;
+        }
+        button {
+            background: #4361ee;
+            color: white;
+            border: none;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>🛸 Teorias Não Convencionais</h1>
+    </header>
+
+    <div id="posts">
+        <div class="post">
+            <h2>Exemplo de Teoria</h2>
+            <p>E se a Lua for uma construção artificial?</p>
+            <button onclick="likePost()">👍 Curtir</button>
+            <p id="likes">0 curtidas</p>
+        </div>
+    </div>
+
+    <!-- Firebase (substitua os valores pelos SEUS) -->
+    <script src="https://www.gstatic.com/firebasejs/9.6.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.0/firebase-firestore-compat.js"></script>
+    <script>
+        // Configuração do Firebase (você vai pegar isso no console)
+        const firebaseConfig = {
+            apiKey: "SUA_API_KEY",
+            authDomain: "SEU_PROJETO.firebaseapp.com",
+            projectId: "SEU_PROJETO",
+            storageBucket: "SEU_PROJETO.appspot.com",
+            messagingSenderId: "SEU_SENDER_ID",
+            appId: "SEU_APP_ID"
+        };
+
+        // Inicializa o Firebase
+        firebase.initializeApp(firebaseConfig);
+        const db = firebase.firestore();
+
+        // Função de curtir (simplificada)
+        function likePost() {
+            alert("Funcionalidade de curtida será adicionada aqui!");
+        }
+    </script>
+</body>
+</html>
